@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WikiLite - A Minimal Wikipedia-style Site</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="top-nav">
+        <div class="nav-logo">WikiLite</div>
+        <ul class="nav-links">
+            <li><a href="#" id="home-link">Home</a></li>
+            <li><a href="#" id="categories-link">Categories</a></li>
+            <li><a href="#" id="random-link">Random Article</a></li>
+        </ul>
+        <form class="search-bar" onsubmit="return false;">
+            <input type="text" id="search-input" placeholder="Search articles...">
+        </form>
+    </nav>
+    <main>
+        <aside id="toc" class="side-nav"></aside>
+        <section id="article-list" class="article-list"></section>
+        <article id="main-article" class="main-article"></article>
+    </main>
+    <footer>
+        <p>&copy; 2025 WikiLite. Not affiliated with Wikipedia.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
